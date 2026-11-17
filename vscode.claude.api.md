@@ -16,7 +16,7 @@ Windows   :
 %USERPROFILE%\.claude\settings.json
 ```
 >[!IMPORTANT]
->If the file does not exist, create it manually:
+>If the file does not exist, create it manually; Maker sure it is "settings" not "setting";
 ---
 ## Step 2: Edit with Your Configuration
 
