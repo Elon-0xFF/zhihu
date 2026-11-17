@@ -20,7 +20,7 @@ Windows   :
 ---
 ## Step 2: Edit with Your Configuration
 
-Open the file in any text editor and paste the following template. Replace the placeholder values with your actual provider information.
+1. Open the file in any text editor and paste the following template. Replace the placeholder values with your actual provider information.
 ```text
 {
 "includeCoAuthoredBy": false,
@@ -35,6 +35,18 @@ Open the file in any text editor and paste the following template. Replace the p
   "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash[1m]"
  }
 }
+```
+
+2. Switch to VScode, Using Ctrl+Shift+P to open Preference: Open User Settings: (JSON)
+3. Add ~ underneath the  "claudeCode.preferredLocation": "panel"
+
+```
+,
+  "claudeCode.environmentVariables": [
+{ "name": "ANTHROPIC_BASE_URL", "value": "https://xxxx" },
+{ "name": "ANTHROPIC_AUTH_TOKEN", "value": "xxxx" }
+
+  ],
 ```
 > [!TIP]
 > 
