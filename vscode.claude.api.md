@@ -26,13 +26,13 @@ Open the file in any text editor and paste the following template. Replace the p
 "includeCoAuthoredBy": false,
  "env": {
 
-  "ANTHROPIC\_BASE\_URL": "https://your-provider-api.example.com",
+  "ANTHROPIC_BASE_URL": "https://your-provider-api.example.com",
 
-  "ANTHROPIC\_AUTH\_TOKEN": "sk-your-api-key-here",
+  "ANTHROPIC_AUTH_TOKEN": "sk-your-api-key-here",
 
-  "ANTHROPIC\_DEFAULT\_OPUS\_MODEL": "deepseek-v4-flash\[1m]",
-  "ANTHROPIC\_DEFAULT\_SONNET\_MODEL": "deepseek-v4-flash\[1m]",
-  "ANTHROPIC\_DEFAULT\_HAIKU\_MODEL": "deepseek-v4-flash\[1m]"
+  "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-flash[1m]",
+  "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-flash[1m]",
+  "ANTHROPIC_DEFAULT_HAIKU_MODEL": "deepseek-v4-flash[1m]"
  }
 }
 ```
@@ -40,18 +40,18 @@ Open the file in any text editor and paste the following template. Replace the p
 > 
 > 1. includeCoAuthoredBy Set to false to omit "Co-Authored-By: Claude" from commit messages.
 > 
-> 2. ANTHROPIC\_BASE\_URL The base URL of your API provider (not DeepSeek's official endpoint).
+> 2. ANTHROPIC_BASE_URL The base URL of your API provider (not DeepSeek's official endpoint).
 > Must be compatible with Anthropic's message format.
 > 
-> 4. ANTHROPIC\_AUTH\_TOKEN Your API key from the provider.
+> 4. ANTHROPIC_AUTH_TOKEN Your API key from the provider.
 > 
 > 5. Three model variables Model identifiers for different complexity tiers.
 >You can use the same model name for all three to avoid "model not found" errors.
 
 
 >[!IMPORTANT]
->\- ANTHROPIC\_BASE\_URL must point to a provider/middleware that speaks the Anthropic-compatible protocol. Directly using DeepSeek's own URL will not work because the request formats differ.
->\- Setting all three model fields to the same value is safe and prevents missing-model errors.
+>- ANTHROPIC_BASE_URL must point to a provider/middleware that speaks the Anthropic-compatible protocol. Directly using DeepSeek's own URL will not work because the request formats differ.
+>- Setting all three model fields to the same value is safe and prevents missing-model errors.
 
 
 ---
