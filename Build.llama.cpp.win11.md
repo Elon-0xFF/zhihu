@@ -62,7 +62,7 @@ cd D:\llama.cpp\llama.cpp
 ```
 #### Build llama.cpp:
 ```
-cmake -B build -DGGML_CUDA=ON]
+cmake -B build -DGGML_CUDA=ON
 ```
 
 #### and be patient with the later one which takes more time
